@@ -1,0 +1,6 @@
+...TICKET DE COMPRA...
+Producto          Cant      Subtotal
+------------------------------------
+Mouse Logitech    13      $195000.0
+...
+TOTAL A PAGAR: $195000.0

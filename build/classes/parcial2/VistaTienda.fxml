@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="784.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="parcial2.VistaTiendaController">
+   <children>
+      <TableView fx:id="tablaProductos" layoutX="14.0" layoutY="50.0" prefHeight="312.0" prefWidth="342.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="108.0" text="Nombre" />
+          <TableColumn fx:id="colPrecio" prefWidth="116.0" text="Precio" />
+            <TableColumn fx:id="colStock" prefWidth="117.0" text="Stock" />
+        </columns>
+      </TableView>
+      <ListView fx:id="listaCarrito" layoutX="500.0" layoutY="50.0" prefHeight="312.0" prefWidth="254.0" />
+      <Label layoutX="25.0" layoutY="22.0" text="Productos" />
+      <Label layoutX="364.0" layoutY="162.0" text="Cant:" />
+      <Label layoutX="500.0" layoutY="22.0" text="Carrito" />
+      <Label fx:id="lblMensaje" layoutX="185.0" layoutY="369.0" textFill="RED">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCantidad" layoutX="403.0" layoutY="158.0" prefHeight="25.0" prefWidth="88.0" />
+      <Button layoutX="613.0" layoutY="375.0" mnemonicParsing="false" onAction="#confirmar" text="Confirmar compra" />
+      <Button layoutX="403.0" layoutY="194.0" mnemonicParsing="false" onAction="#agregar" prefHeight="25.0" prefWidth="88.0" text="Agregar" />
+   </children>
+</AnchorPane>

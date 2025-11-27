@@ -117,8 +117,7 @@ public class VistaTiendaController implements Initializable {
             return;
         }
         
-        // Actualizar stock
-        
+        // Actualizar stock de el producto seleccionado
         seleccionado.setStock(seleccionado.getStock() - cantidad);
         tablaProductos.refresh(); 
 
